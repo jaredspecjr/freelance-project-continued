@@ -1,5 +1,20 @@
 
 
+@mixin banner{
+  width: 100%;
+  position: relative;
+  color: rgba(255,255,255,0.8);
+  .header{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+  }
+  img{
+    width: 100%;
+  }
+}
 
 .grid{
   .grid-panel{
@@ -11,11 +26,6 @@
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       width: 100%;
-      img{
-        width: 100%;
-        grid-column: 2 / 10;
-        position: relative;
-      }
       .empty1{
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -23,17 +33,10 @@
       .empty2{
         grid-column: 10 / 11;
       }
-    }
-    .header{
-      position: absolute;
-      background-color: rgba(0,0,0,0.5);
-      color: white;
-      bottom: 0;
-      font-size: 20px;
-      width:100%;
-      text-align: center;
-      font-family: serif;
-      color: rgba(255, 255, 255, 0.9);
+      .welcome-info{
+        @include banner;
+        grid-column: 2 / 10;
+      }
     }
   }
 }
