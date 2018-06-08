@@ -44,14 +44,36 @@ $backgroundColor: #E0F0EC;
       }
     }
   }
-  .grid-panel2{
+  .grid-panel2 {
+    h2{
+      text-align: center;
+    }
+    h3{
+      text-align: center;
+    }
+    p{
+      padding-left: 100px;
+      padding-right: 100px;
+    }
     .about-image{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      padding: 10px;
+      border-top: 1px solid black;
       img{
         width:100%;
-        border-radius: 50%;
+        border-radius: 40%;
+      }
+      p{
+      padding-left: 10px;
+      padding-right: 10px;
       }
     }
+  }
+  .grid-panel3{
+
+  }
+  .inner-panel{
+    border: 1px solid black;
   }
 }
