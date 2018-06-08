@@ -1,9 +1,16 @@
-.top-nav ul{
+.top-nav{
   display: flex;
   flex-direction: row;
-  list-style-type: none;
-  justify-content: flex-end;
-  li{
-    padding: 10px;
+  justify-content: space-between;
+  background-color: #34BC8D;
+  img{
+    height: 50px;
   }
+  .links{
+    padding: 15px;
+  }
+  a {
+    padding-left: 10px;
+  }
+
 }
