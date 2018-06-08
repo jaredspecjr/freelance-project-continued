@@ -1,4 +1,4 @@
-
+$backgroundColor: #E0F0EC;
 
 @mixin banner{
   width: 100%;
@@ -17,6 +17,9 @@
 }
 
 .grid{
+  margin: -10px;
+  background-color: $backgroundColor;
+
   .grid-panel{
     border: 1px solid black;
     display: flex;
@@ -29,13 +32,25 @@
       .empty1{
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+        background-color: $backgroundColor;
       }
       .empty2{
         grid-column: 10 / 11;
+        background-color: $backgroundColor;
       }
       .welcome-info{
         @include banner;
         grid-column: 2 / 10;
+      }
+    }
+  }
+  .grid-panel2{
+    .about-image{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      img{
+        width:100%;
+        border-radius: 50%;
       }
     }
   }
