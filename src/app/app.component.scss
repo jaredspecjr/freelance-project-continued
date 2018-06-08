@@ -1,0 +1,9 @@
+.top-nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+  li{
+    padding: 10px;
+  }
+}
